@@ -1,0 +1,285 @@
+/* navbar */
+:root {
+  --primary: #0a3347cc;
+  --bg: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: #fff;
+  min-height: 2000px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(10, 51, 71, 0.8);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-brand {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-brand span {
+  color: #c7dfebd5;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 1.7rem;
+}
+
+.navbar .nav-link a:hover {
+  color: var(--primary);
+}
+
+.navbar .nav-link a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem #c7dfebd5;
+  transform: scaleX(0);
+}
+
+.navbar .nav-link a:hover::after {
+  transform: scaleX(1);
+  transition: 0.3s;
+}
+
+/* navbar search form */
+.navbar .search-form {
+  top: 100%;
+  right: 7%;
+  width: 23rem;
+  height: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search-form input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+/* akhir navbar search form */
+/* akhir navbar */
+
+/* hero section */
+.hero {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+}
+
+/* akhir hero section */
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(240, 229, 229) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 1px, 1px, 3px, rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var("--primary");
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  text-shadow: 1px, 1px, 3px, rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* product section */
+.product h2,
+.contact {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color: var(--primary);
+}
+
+.product h2,
+.contact {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.product p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 150;
+  line-height: 1.6;
+}
+/* akhir product section */
+
+/* product */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 2rem;
+}
+
+.box {
+  padding: 0px 10px 10px 10px;
+  background: transparent;
+  box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.35s ease;
+  color: rgba(10, 51, 71, 0.8);
+}
+
+.box img {
+  width: 200px;
+  height: auto;
+}
+
+.box h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: blue;
+}
+
+.box h5 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* akhir product */
+
+/* contact */
+.contact .alamat p {
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+
+.contact .alamat p span {
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+}
+/* akhir contact */
+
+/* footer */
+.class {
+  text-align: center;
+  padding: 17px;
+  background: var(--primary);
+  margin: 20px;
+}
+
+.class p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/* akhir footer */
+
+/* media queries */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* home */
